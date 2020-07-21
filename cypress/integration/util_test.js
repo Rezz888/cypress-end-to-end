@@ -1,11 +1,17 @@
 import { sum, squire } from "../../src/util";
 
+const greet = () => 'Hello';
+
 describe('testing math util function', () => {
     it('sum returns correct value', () => {
        expect(sum(1,2)).to.equal(3)
     })
 
-    it('squire returns correct value ', ()=> {
+    it('squire returns correct value ', () => {
        expect(squire(3)).to.equal(9)
+    })
+
+    it('hello variable', () => {
+        expect(greet()).to.equal('Hello')
     })
 })

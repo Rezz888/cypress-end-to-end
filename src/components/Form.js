@@ -122,6 +122,7 @@ export default function Form() {
         Why would you like to help?
         <textarea
           name='motivation'
+          id="motivation"
           value={formState.motivation}
           onChange={inputChange}
         />
